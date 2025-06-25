@@ -97,7 +97,12 @@ export function Landing() {
             >
               Join SocialSphere
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={() => window.scrollTo({ top: document.getElementById('features')?.offsetTop, behavior: 'smooth' })}
+            >
               Learn More
             </Button>
           </div>
@@ -105,7 +110,7 @@ export function Landing() {
       </section>
 
       {/* Features Grid */}
-      <section className="container mx-auto px-4 py-20">
+      <section id="features" className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Powerful Features</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

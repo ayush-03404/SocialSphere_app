@@ -5,6 +5,7 @@ import { Toast } from "@/components/Toast";
 import { Navigation } from "@/components/Navigation";
 import { Landing } from "@/pages/Landing";
 import { Home } from "@/pages/Home";
+import { UserGuide } from "@/pages/UserGuide";
 
 function Router() {
   const { isAuthenticated, isLoading } = useAuth();
@@ -31,6 +32,7 @@ function Router() {
             <main className="flex-1 ml-64 min-h-screen bg-background">
               <Switch>
                 <Route path="/" component={Home} />
+                <Route path="/guide" component={UserGuide} />
                 <Route path="/chat" component={() => <div>Chat Page (Coming Soon)</div>} />
                 <Route path="/friends" component={() => <div>Friends Page (Coming Soon)</div>} />
                 <Route path="/stories" component={() => <div>Stories Page (Coming Soon)</div>} />

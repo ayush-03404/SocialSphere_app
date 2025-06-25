@@ -7,6 +7,7 @@ import {
   Gavel, 
   Monitor, 
   BookOpen,
+  HelpCircle,
   Moon,
   Sun,
   LogOut
@@ -22,6 +23,7 @@ export function Navigation() {
 
   const navItems = [
     { path: "/", icon: Home, label: "Home" },
+    { path: "/guide", icon: HelpCircle, label: "How to Use" },
     { path: "/chat", icon: MessageCircle, label: "Chat" },
     { path: "/friends", icon: Users, label: "Friends" },
     { path: "/stories", icon: BookOpen, label: "Stories" },
